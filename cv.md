@@ -2,6 +2,8 @@
 
 ![](./photo_2021-11-24_14-06-00.jpg)
 
+*****
+
 ## Junior Frontend Developer
 
 *****
@@ -16,6 +18,8 @@
 
   **[LinkedIn ](https://www.linkedin.com/in/ilnar-esanov-24465720b/)**
 
+*****
+
 ## Briefly about myself:
 Currently I'm a student of Uzbekistan State World Languages University in Tashkent. A year ago I decided to try myself in Frontend Developing, because I like to do this kind of staff, such as crating web-sites and applications. 
 
@@ -25,6 +29,8 @@ Then, I also started to learn Javascript with a help of course on the same platf
 
 I believe that in the not so far future my skills will lead me through the path of becoming a proficient JavaScript Software Engineer!
 
+*****
+
 ## Skills and Proficiency:
 
 * HTML5, CSS3, Working with layouts
@@ -32,6 +38,8 @@ I believe that in the not so far future my skills will lead me through the path 
 * Git, GitHub Basics
 * VS Code, Sublime
 * Codewars kyu 8-7
+
+*****
 
 ## Code Example: 
   KATA from CODEWARS: Replace items that < 5 with 0 and which are > 5 with 1
@@ -42,8 +50,9 @@ I believe that in the not so far future my skills will lead me through the path 
     if (x[i] < "5") tmp += "0";
     else if (x[i] >= "5") tmp += "1";
   }
-  return tmp; `
-} 
+  return tmp; }`
+
+***** 
 
 ## Courses:
 
@@ -53,9 +62,14 @@ I believe that in the not so far future my skills will lead me through the path 
   4. JavaScript training from RS School 2022 (in progress)
   5. Book - Grocking Algorithms (in progress)
 
+*****
+
 ## Languages:
 
 1. Russian - Native
-2. English - B2, EILTS certificate (Overall: 6.0)
+2. English - EILTS certificate (Overall: 6.0), B2 (according to the British Council test)
+
+![](./Screenshot_33.png)
+
 3. Uzbek - Comprehent user
 4. German - Beginner
