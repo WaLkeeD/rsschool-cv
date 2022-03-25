@@ -10,11 +10,11 @@
 
   **Phone**: +998 97 152 00 27
 
-  **[E-mail: ](ilnaresanov2002@gmail.com)**
+  **E-mail**: ilnaresanov2002@gmail.com
 
-  **[Telegram: ](https://t.me/walker_027)**
+  **[Telegram ](https://t.me/walker_027)**
 
-  **[LinkedIn: ](https://www.linkedin.com/in/ilnar-esanov-24465720b/)**
+  **[LinkedIn ](https://www.linkedin.com/in/ilnar-esanov-24465720b/)**
 
 ## Briefly about myself:
 Currently I'm a student of Uzbekistan State World Languages University in Tashkent. A year ago I decided to try myself in Frontend Developing, because I like to do this kind of staff, such as crating web-sites and applications. 
