@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+}
+
+._container {
+  padding: 0 1.5rem;
+  box-sizing: content-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.education__heading, .contacts__header, .photo__heading_first {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 185%;
+  letter-spacing: 0.06rem;
+}
+
+.education__item, .contacts__text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 142.8571428571%;
+  letter-spacing: 0.02rem;
+}
+
+.left {
+  justify-content: space-between;
+  width: 30%;
+  background-color: burlywood;
+  padding: 2rem;
+}
+.left__photo {
+  padding: 1rem 0;
+  border-bottom: 1px solid #000;
+}
+.left__photo img {
+  width: 40%;
+  border-radius: 50%;
+}
+.left__contacts {
+  gap: 1.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.photo__img {
+  text-align: center;
+}
+.photo__heading_first {
+  font-family: "Tiro Gurmukhi", serif;
+}
+.photo__heading_second {
+  font-size: 1.6rem;
+  font-family: "Tiro Gurmukhi", serif;
+}
+
+.contacts__body {
+  gap: 1rem;
+}
+.contacts__item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.contacts__item img {
+  width: 8%;
+}
+.contacts__text a {
+  color: #000;
+  text-decoration: underline;
+}
+.contacts__text a:hover {
+  color: #0088cc;
+}
+
+.education__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.education__list {
+  gap: 0.5rem;
+}
+.education__list li {
+  list-style: inside;
+}
+.right {
+  width: 70%;
+}
+
+/*# sourceMappingURL=style.css.map */

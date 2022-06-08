@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+// BASE
+
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    gap: 2rem;
+}
+
+._container {
+    padding: 0 1.5rem;
+    box-sizing: content-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin font($size, $weight, $height, $letter-spacing) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $letter-spacing;
+}
+
+%header-title {
+    @include font(1.8rem, 700, calc(3.7 / 2 * 100%), 0.06rem);
+}
+
+%header-text {
+    @include font(1.4rem, 500, calc(2 / 1.4 * 100%), 0.02rem);
+}
+
+// LEFT
+
+.left {
+    justify-content: space-between;
+    width: 30%;
+    background-color: burlywood;
+    padding: 2rem;
+
+    // .left__photo
+
+    &__photo {
+        padding: 1rem 0;
+        border-bottom: 1px solid #000;
+    }
+
+    &__photo img {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    // .left__contacts
+
+    &__contacts {
+        gap: 1.5rem;
+        padding: 1rem;
+        border-bottom: 1px solid #000;
+    }
+
+
+}
+
+.photo {
+    &__img {
+        text-align: center;
+        
+    }
+
+    &__heading_first {
+        @extend %header-title;
+        font-family: "Tiro Gurmukhi", serif;
+    }
+
+    &__heading_second {
+        font-size: 1.6rem;
+        font-family: "Tiro Gurmukhi", serif;
+    }
+}
+
+// CONTACTS
+
+.contacts {
+    // .contacts__header
+
+    &__header {
+        @extend %header-title;
+    }
+
+    // .contacts__body
+
+    &__body {
+        gap: 1rem;
+    }
+
+    // .contacts__item
+
+    &__item {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__item img {
+        width: 8%;
+    }
+
+    // .contacts__text
+
+    &__text {
+        @extend %header-text;
+    }
+
+    &__text a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    &__text a:hover {
+        color: #0088cc;
+    }
+}
+.education {
+    // .education__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    // .education__heading
+
+    &__heading {
+        @extend %header-title;
+    }
+
+    // .education__list
+
+    &__list {
+        gap: 0.5rem;
+    }
+
+    &__list li {
+        list-style: inside;
+    }
+
+    // .education__item
+
+    &__item {
+        @extend %header-text;
+    }
+}
+.skills {
+    // .skills__body
+
+    &__body {
+    }
+
+    // .skills__heading
+
+    &__heading {
+    }
+
+    // .skills__list
+
+    &__list {
+    }
+
+    // .skills__item
+
+    &__item {
+    }
+}
+
+.right {
+    width: 70%;
+}
