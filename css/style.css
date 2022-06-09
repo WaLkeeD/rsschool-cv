@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  background-color: rgb(213, 210, 210);
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+}
+
+._container {
+  padding: 0 1.5rem;
+  box-sizing: content-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.languages__heading, .skills__heading, .code__heading, .main__heading, .project__heading, .education__heading, .contacts__header {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 185%;
+  letter-spacing: 0.06rem;
+}
+
+.main__text, .project__link, .education__item, .contacts__text {
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 142.8571428571%;
+  letter-spacing: 0.02rem;
+}
+
+.footer__author a, .project__link, .education__item a {
+  color: rgb(37, 73, 182);
+}
+.footer__author a:hover, .project__link:hover, .education__item a:hover {
+  color: red;
+}
+
+.left {
+  justify-content: space-between;
+  width: 35%;
+  background-color: burlywood;
+  padding: 2rem;
+}
+.left__contacts {
+  gap: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+}
+.left__education {
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+}
+.left__project {
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.contacts__body {
+  gap: 1rem;
+}
+.contacts__item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.contacts__item img {
+  width: 8%;
+}
+.contacts__text a {
+  color: #000;
+  text-decoration: underline;
+}
+.contacts__text a:hover {
+  color: #0088cc;
+}
+
+.education__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.education__list {
+  gap: 1rem;
+}
+.education__list li {
+  list-style: inside;
+}
+.project__body {
+  gap: 1.5rem;
+}
+.right {
+  justify-content: space-between;
+}
+.right__header {
+  display: flex;
+  gap: 5rem;
+  padding: 1rem 1rem;
+  background-color: rgb(213, 210, 210);
+}
+.right__main {
+  gap: 2rem;
+  background-color: rgba(214, 183, 183, 0.775);
+}
+.right__footer {
+  background-color: #fff;
+  min-height: 1.5rem;
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+}
+
+.header__photo {
+  width: 30%;
+  text-align: center;
+}
+.header__photo img {
+  width: 57%;
+  border-radius: 50%;
+}
+.header__heading {
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.header__primary {
+  font-size: 4.8rem;
+  font-family: "Nuosu SIL", serif;
+}
+.header__secondary {
+  font-size: 2rem;
+  font-family: "Nuosu SIL", serif;
+}
+
+.main {
+  padding: 1rem;
+}
+.main__about {
+  gap: 1.5rem;
+}
+.main__heading {
+  text-align: center;
+  padding-top: 1rem;
+}
+.main__content {
+  padding: 0 3rem;
+}
+.main__code pre code {
+  font-size: 1.5rem;
+}
+.main__proficiency {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+.main__skills {
+  gap: 1rem;
+}
+.main__languages {
+  gap: 1rem;
+}
+
+.skills__list {
+  gap: 1.5rem;
+}
+.skills__list li {
+  list-style: inside;
+}
+.skills__item {
+  font-size: 1.4rem;
+}
+
+.languages__list {
+  gap: 1.5rem;
+}
+.languages__list li {
+  list-style: inside;
+}
+.languages__item {
+  font-size: 1.4rem;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__author {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.footer__logo {
+  text-align: end;
+  flex: 1 0;
+}
+.footer__logo-link img {
+  width: 10%;
+}
+
+/*# sourceMappingURL=style.css.map */
