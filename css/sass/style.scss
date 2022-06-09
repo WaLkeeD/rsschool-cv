@@ -39,19 +39,19 @@ html,
 body {
     height: 100%;
     line-height: 1;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
+    background-color: rgb(213, 210, 210);
 }
 
 // BASE
 
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap");
 
 .wrapper {
     min-height: 100%;
-    overflow: hidden;
     display: flex;
-    gap: 2rem;
 }
 
 ._container {
@@ -76,54 +76,40 @@ body {
 }
 
 %header-text {
-    @include font(1.4rem, 500, calc(2 / 1.4 * 100%), 0.02rem);
+    @include font(1.45rem, 500, calc(2 / 1.4 * 100%), 0.02rem);
+}
+
+%link {
+    color: rgb(37, 73, 182);
+    &:hover {
+        color: red;
+    }
 }
 
 // LEFT
 
 .left {
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
     background-color: burlywood;
     padding: 2rem;
-
-    // .left__photo
-
-    &__photo {
-        padding: 1rem 0;
-        border-bottom: 1px solid #000;
-    }
-
-    &__photo img {
-        width: 40%;
-        border-radius: 50%;
-    }
 
     // .left__contacts
 
     &__contacts {
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 1rem;
         border-bottom: 1px solid #000;
     }
 
-
-}
-
-.photo {
-    &__img {
-        text-align: center;
-        
+    &__education {
+        padding: 1rem;
+        border-bottom: 1px solid #000;
     }
 
-    &__heading_first {
-        @extend %header-title;
-        font-family: "Tiro Gurmukhi", serif;
-    }
-
-    &__heading_second {
-        font-size: 1.6rem;
-        font-family: "Tiro Gurmukhi", serif;
+    &__project {
+        padding: 1rem;
+        gap: 1.5rem;
     }
 }
 
@@ -169,6 +155,7 @@ body {
         color: #0088cc;
     }
 }
+
 .education {
     // .education__body
 
@@ -187,7 +174,7 @@ body {
     // .education__list
 
     &__list {
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     &__list li {
@@ -199,29 +186,215 @@ body {
     &__item {
         @extend %header-text;
     }
-}
-.skills {
-    // .skills__body
 
-    &__body {
+    &__item a {
+        @extend %link;
     }
+}
 
-    // .skills__heading
+.project {
+    &__body {
+        gap: 1.5rem;
+    }
 
     &__heading {
+        @extend %header-title;
     }
 
-    // .skills__list
-
-    &__list {
-    }
-
-    // .skills__item
-
-    &__item {
+    &__link {
+        @extend %header-text;
+        @extend %link;
     }
 }
 
+// RIGHT
+
 .right {
-    width: 70%;
+    justify-content: space-between;
+
+    // .right__header
+
+    &__header {
+        display: flex;
+        gap: 5rem;
+        padding: 1rem 1rem;
+        background-color: rgb(213, 210, 210);
+    }
+
+    // .right__main
+
+    &__main {
+        gap: 2rem;
+        // margin-top: 1rem;
+        background-color: rgba(214, 183, 183, 0.775);
+    }
+
+    // .right__footer
+
+    &__footer {
+        background-color: #fff;
+        min-height: 1.5rem;
+        font-size: 1.4rem;
+        padding: 1rem 4rem;
+    }
+}
+
+.header {
+    // .header__photo
+
+    &__photo {
+        width: 30%;
+        text-align: center;
+    }
+
+    &__photo img {
+        width: 57%;
+        border-radius: 50%;
+    }
+
+    // .header__heading
+
+    &__heading {
+        flex: 1 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    // .header__primary
+
+    &__primary {
+        font-size: 4.8rem;
+        font-family: "Nuosu SIL", serif;
+    }
+
+    // .header__secondary
+
+    &__secondary {
+        font-size: 2rem;
+        font-family: "Nuosu SIL", serif;
+    }
+}
+
+.main {
+    padding: 1rem;
+
+    // .main__about
+
+    &__about {
+        gap: 1.5rem;
+    }
+
+    // .main__heading
+
+    &__heading {
+        @extend %header-title;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    // .main__content
+
+    &__content {
+        padding: 0 3rem;
+    }
+
+    // .main__text
+
+    &__text {
+        @extend %header-text;
+    }
+
+    &__code pre code {
+        font-size: 1.5rem;
+    }
+
+    &__proficiency {
+        display: flex;
+        justify-content: space-around;
+
+        padding-top: 1rem;
+    }
+
+    &__skills {
+        gap: 1rem;
+    }
+
+    &__languages {
+        gap: 1rem;
+    }
+}
+
+.code {
+    &__heading {
+        @extend %header-title;
+    }
+}
+
+.skills {
+    &__heading {
+        @extend %header-title;
+    }
+
+    &__list {
+        gap: 1.5rem;
+    }
+
+    &__list li {
+        list-style: inside;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+    }
+}
+
+.languages {
+    &__heading {
+        @extend %header-title;
+    }
+
+    &__list {
+        gap: 1.5rem;
+    }
+
+    &__list li {
+        list-style: inside;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+    }
+}
+
+.footer {
+    // .footer__content
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__author
+
+    &__author {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    &__author a {
+        @extend %link;
+    }
+
+    // .footer__logo
+
+    &__logo {
+        text-align: end;
+        flex: 1 0;
+    }
+
+    &__logo-link img {
+        width: 10%;
+    }
 }
