@@ -1,6 +1,6 @@
 # Ilnar Esanov
 
-![](./photo_2021-11-24_14-06-00.jpg)
+![](./img/photo_2021-11-24_14-06-00.jpg)
 
 *****
 
@@ -69,7 +69,7 @@ I believe that in the not so far future my skills will lead me through the path 
 1. Russian - Native
 2. English - EILTS certificate (Overall: 6.0), B2 (according to the British Council test)
 
-![](./Screenshot_33.png)
+![](./img/Screenshot_33.png)
 
 3. Uzbek - Comprehent user
 4. German - Beginner
