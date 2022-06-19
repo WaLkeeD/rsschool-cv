@@ -132,7 +132,7 @@ body {
   transition: all 0.3s;
   cursor: pointer;
 }
-.navigation__item:hover p {
+.navigation__item:hover a {
   color: #fff;
   transition: all 0.3s;
 }
@@ -140,10 +140,6 @@ body {
   color: black;
 }
 
-/* .btn-mobile-nav {
-}
-.icon-mobile-nav {
-} */
 .main {
   margin-top: 1rem;
 }
