@@ -515,6 +515,8 @@ pre code {
 
     &__text {
         @extend %header-text;
+        list-style: inside;
+
     }
 }
 
