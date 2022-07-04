@@ -337,6 +337,10 @@ pre code {
   justify-content: center;
   padding: 1rem;
 }
+.project__text {
+  list-style: inside;
+}
+
 .footer {
   margin-top: 2rem;
 }
